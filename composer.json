@@ -1,0 +1,93 @@
+{
+  "name": "rudloff/alltube",
+  "description": "HTML GUI for youtube-dl",
+  "license": "GPL-3.0-only",
+  "homepage": "http://alltubedownload.net/",
+  "type": "project",
+  "require": {
+    "slim/slim": "~3.9.2",
+    "mathmarques/smarty-view": "~1.1.0",
+    "symfony/yaml": "~3.4.1",
+    "symfony/process": "~3.4.1",
+    "guzzlehttp/guzzle": "~6.3.0",
+    "aura/session": "~2.1.0",
+    "barracudanetworks/archivestream-php": "~1.0.5",
+    "smarty-gettext/smarty-gettext": "~1.5.1",
+    "zonuexe/http-accept-language": "~0.4.1",
+    "rinvex/country": "~3.1.0",
+    "php-mock/php-mock-mockery": "~1.2.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "~3.4.1",
+    "squizlabs/php_codesniffer": "~3.2.2",
+    "phpunit/phpunit": "~6.5.2",
+    "doctrine/instantiator": "~1.0.0",
+    "ffmpeg/ffmpeg": "~3.4.1",
+    "rg3/youtube-dl": "2018.06.04",
+    "heroku/heroku-buildpack-php": "*",
+    "anam/phantomjs-linux-x86-binary": "~2.1.1"
+  },
+  "extra": {
+    "paas": {
+      "nginx-includes": [
+        "resources/nginx.conf"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "rg3/youtube-dl",
+        "version": "2018.06.04",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/rg3/youtube-dl/archive/2018.06.04.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ffmpeg/ffmpeg",
+        "version": "3.4.1",
+        "dist": {
+          "url": "https://johnvansickle.com/ffmpeg/releases/ffmpeg-3.4.1-64bit-static.tar.xz",
+          "type": "xz"
+        },
+        "bin": [
+          "ffmpeg"
+        ]
+      }
+    }
+  ],
+  "authors": [
+    {
+      "name": "Pierre Rudloff",
+      "email": "contact@rudloff.pro",
+      "homepage": "https://rudloff.pro/",
+      "role": "Developer"
+    },
+    {
+      "name": "Olivier Haquette",
+      "email": "contact@olivierhaquette.fr",
+      "homepage": "http://olivierhaquette.fr/",
+      "role": "Designer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Alltube\\": "classes/",
+      "Alltube\\Controller\\": "controllers/",
+      "Alltube\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "compile": "composer install --ignore-platform-reqs",
+    "update-locales": [
+      "tsmarty2c.php templates > i18n/template.pot",
+      "xgettext --omit-header -j -o i18n/template.pot classes/* controllers/*"
+    ],
+    "youtube-dl": "vendor/rg3/youtube-dl/youtube_dl/__main__.py"
+  }
+}

@@ -1,0 +1,57 @@
+to add index supported sitesd
+
+
+    <div class="sitesSupported">
+        <h1>More than 1,000 Video &amp; Music Sites Supported</h1>
+                <div class="websites row">
+
+                    <div class="col-md-3 col-sm-3 col-xs-4 item2">
+                              <a href="https://www.youtube.com/">
+                            <img class="round-border" src="/img/siteslogo/youtube-icon-small.png"/>
+              <span>YouTube</span>
+            </a>
+          </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 item2">
+                              <a href="Instagram.com">
+                            <img class="round-border" src="/img/siteslogo/instagram-icon-small.png"/>
+              <span>Instagram</span>
+            </a>
+          </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 item2">
+                              <a href="facebook.com">
+                            <img class="round-border" src="/img/siteslogo/facebook-icon-small.png"/>
+              <span>Facebook</span>
+            </a>
+          </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 item2">
+                              <a href="https://web.archive.org/web/20180515225554/https://pickvideo.net/dailymotion-video-downloader">
+                            <img class="round-border" src="/img/siteslogo/dailymotion-icon-small.png"/>
+              <span>Dailymotion</span>
+            </a>
+          </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 item2">
+                              <a href="https://web.archive.org/web/20180515225554/https://pickvideo.net/twitter-video-downloader">
+                            <img class="round-border" src="/img/siteslogo/twitter-icon-small.png"/>
+              <span>Twitter</span>
+            </a>
+          </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 item2">
+                              <a href="https://web.archive.org/web/20180515225554/https://pickvideo.net/soundcloud-downloader">
+                            <img class="round-border" src="/img/siteslogo/soundcloud-icon-small.png"/>
+              <span>Soundcloud</span>
+            </a>
+          </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 item2">
+                              <a href="https://web.archive.org/web/20180515225554/https://pickvideo.net/vimeo-video-downloader">
+                            <img class="round-border" src="/img/siteslogo/vimeo-icon-small.png"/>
+              <span>Vimeo</span>
+            </a>
+          </div>
+                          </div>
+
+      </div>
+
+      <div class="about topStandardMargin">
+        <h1>About</h1>
+        <p>TechBotVideoDownloader is the fastest free online video downloader that allows users to download songs and videos from many websites for free. Using our downloader is very easy. Just enter the link of the video or the page where the video is located, then press the Download button. TechBotVideoDownloader will fetch and display all the available resolutions and download links for that video.</p>
+      </div>

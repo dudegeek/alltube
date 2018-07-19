@@ -1,0 +1,37 @@
+{
+  "name": "Video Downloader",
+  "description": "Techbot Video Downloader",
+  "logo": "https://techbotvideodownloader.herokuapp.com/img/512.png",
+  "keywords": [
+    "Techbot Video Downloader",
+    "download",
+    "video",
+    "youtube",
+    "php"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/piotras/heroku-buildpack-gettext.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "env": {
+    "CONVERT": {
+      "description": "Enable audio conversion",
+      "value": "true"
+    },
+    "PYTHON": {
+      "description": "Path to python binary",
+      "value": "/app/.heroku/python/bin/python"
+    }
+  },
+  "website": "https://techbotvideodownloader.herokuapp.com/"
+}
