@@ -36,17 +36,17 @@
     <div id="bookmarklet" class="bookmarklet_wrapper">
         <p> {t}Drag this to your bookmarks bar{/t} </p>
         
-        <a class="bookmarklet small-font" href="javascript:void(open('https://techbotvideodownloader.herokuapp.com{path_for name='redirect'}?url='+encodeURIComponent(location.href)));">{t}1-Click Video Downloader{/t}</a>
+        <a class="bookmarklet small-font" href="javascript:void(open('https://tbvd.herokuapp.com{path_for name='redirect'}?url='+encodeURIComponent(location.href)));">{t}1-Click Video Downloader{/t}</a>
         </div>
     <br>
      <div id="bookmarklet" class="bookmarklet_wrapper">
       <p>  </p>
-        <a class="bookmarklet small-font" href="javascript:void(open('https://techbotvideodownloader.herokuapp.com{path_for name='redirect'}?url='+encodeURIComponent(location.href)+'&format=140'));">{t}1-Click Audio Downloader{/t}</a>
+        <a class="bookmarklet small-font" href="javascript:void(open('https://tbvd.herokuapp.com{path_for name='redirect'}?url='+encodeURIComponent(location.href)+'&format=140'));">{t}1-Click Audio Downloader{/t}</a>
         </div>
      <br>
     <div id="bookmarklet" class="bookmarklet_wrapper">
         <p>  </p>
-        <a class="bookmarklet small-font" href="javascript:void(open('https://techbotvideodownloader.herokuapp.com{path_for name='video'}?url='+encodeURIComponent(location.href)));">{t}Other Format Downloader{/t}</a>
+        <a class="bookmarklet small-font" href="javascript:void(open('https://tbvd.herokuapp.com{path_for name='video'}?url='+encodeURIComponent(location.href)));">{t}Other Format Downloader{/t}</a>
         </div>
  
 </main>
