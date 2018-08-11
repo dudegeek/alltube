@@ -465,7 +465,8 @@ class FrontController
         } else {
             if (empty($videoUrls[0])) {
                 throw new \Exception(_("Please enter a valid URL like: https://www.youtube.com/watch?v=n1VJ39nVIBk
-Note: Playlist URLs like https://www.youtube.com/watch?v=n1VJ39nVIBk&index=5&list=RDMMyP9KiFTyBks are not supported."));
+
+Note: URLs like https://www.youtube.com/watch?v=n1VJ39nVIBk&index=5&list=RDMMyP9KiFTyBks are not supported."));
             }
 
             return $response->withRedirect($videoUrls[0]);
